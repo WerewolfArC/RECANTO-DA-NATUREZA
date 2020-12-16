@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../back-end/index.js"></script>
+    <script src="Admin/admin.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Recanto da Natureza</title>
+</head>
+<body>
+    <header class="menu-principal">
+        <section>
+            <section>
+                <h2> <a href="index.html">Recanto da Natureza</a></h2>
+            </section>
+            <div>
+                <ul>
+                    <li><a href="Hospedagens.html">Hospedagens</a></li>
+                    <li><a href="Reservas.html">Reservas</a></li>
+                    <li><a href="Admin.html">Painel de Admin</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="centerWidthSection">
+            <section class="showHospedagens"></section>
+        </section>
+    </main>
+    <script>
+    showHospedagem()
+    let allTR = document.querySelectorAll('.showHospedagens > table > tr');
+    allTR.forEach(element => {
+        element.children[3].remove();
+    })
+    </script>
+    <footer>
+        <section>
+            <p>
+                Criado em 2020 por
+                <a href="https://www.linkedin.com/in/arthur-gomes-de-freitas-cardozo/" target="_blank" rel="linkedin arthur gomes de freitas cardozo">Arthur Cardozo</a>
+            </p>
+        </section>
+    </footer>
+</body>
+</html>

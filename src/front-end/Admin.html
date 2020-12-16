@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../back-end/index.js"></script>
+    <script src="script.js"></script>
+    <script src="admin/admin.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Recanto da Natureza</title>
+</head>
+<body>
+    <header class="menu-principal">
+        <section>
+            <section>
+                <h2> <a href="index.html">Recanto da Natureza</a></h2>
+            </section>
+            <div>
+                <ul>
+                    <li><a href="Hospedagens.html">Hospedagens</a></li>
+                    <li><a href="Reservas.html">Reservas</a></li>
+                    <li><a href="Admin.html">Painel de Admin</a></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="main">
+            <section>
+                <h1 style="font-weight: bold; color: white;">Hospedagens</h1>
+                <section class="createHospedagens">
+                    <form>
+                        <input id="inputName" type="text" placeholder="Nome">
+                        <input id="inputDescription" type="text" placeholder="Descrição">
+                        <input id="inputValue" type="number" placeholder="Valor" min="0" step="0.01" value="0">
+                        <button onclick="createHospedagem()">Criar</button>
+                    </form>
+                </section>
+                <section class="showHospedagens"></section>
+            </section>
+        </section>
+        <script>showHospedagem()</script>
+    </main>
+    <footer>
+        <section>
+            <p>
+                Criado em 2020 por
+                <a href="https://www.linkedin.com/in/arthur-gomes-de-freitas-cardozo/" target="_blank" rel="linkedin arthur gomes de freitas cardozo">Arthur Cardozo</a>
+            </p>
+        </section>
+    </footer>
+</body>
+</html>
